@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charitable Love - Search Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Charitable Love</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="search.html"><strong>Search</strong></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Search for charity events</h2>
+        
+        <!-- Search form -->
+        <div class="search-form">
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="category">Event category:</label>
+                    <select id="category" name="category">
+                        <option value="all">All categories</option>
+                        <!-- The category options will be dynamically loaded here via JavaScript -->
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter the city or location...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="text" id="date" name="date" placeholder="Year/Month/Day">
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit">Search event</button>
+                    <button type="button" id="clearBtn">Clear filter</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Search results -->
+        <div id="search-results" class="event-grid">
+            <p class="placeholder-text">Please enter the search criteria.</p>
+        </div>
+    </main>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
