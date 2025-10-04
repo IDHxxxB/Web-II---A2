@@ -45,7 +45,6 @@ async function loadEvents() {
 function createEventCard(event) {
     const card = document.createElement('div');
     card.className = 'event-card';
-    
     card.innerHTML = `
         <h3><a href="event.html?id=${event.id}">${event.name}</a></h3>
         <p><strong>Category:</strong> ${event.category_name}</p>
